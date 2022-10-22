@@ -39,7 +39,7 @@ public class Main {
 		customers = new Customer[C];
 		operators = new Operator[O];
 
-		//DO_NOT_EDIT_ANYTHING_ABOVE_THIS_LINE
+	
 		PrintStream outstream1;
 		try {
 		        outstream1 = new PrintStream(outFile);
@@ -195,7 +195,7 @@ public class Main {
       //WRTING TO FILE   
         
     	//Output1
-       // outFile.setWritable(true);
+
         for (int j=0; j< operators.length; j++)	{
     		String line = "Operator " + j +" : "  + operators[j].totalTime + " " + operators[j].totalMessage + " " +  String.format("%.2f", operators[j].totalNetwork);
     		outstream1.println(line);
@@ -247,10 +247,10 @@ public class Main {
     	outstream1.println(line5);
     	
     	outstream1.close();
-        reader.close();      // do not forget to check again!!!!
+        reader.close();      
 
 
-		//DO_NOT_EDIT_ANYTHING_BELOW_THIS_LINE
+	
 	} 
 }
 
